@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="XamUIDemo.LoginPages.LoginPage14"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:renderers="clr-namespace:XamUIDemo.Renderers"
+    BackgroundColor="#1B1B1B"
+    NavigationPage.HasNavigationBar="False">
+    <AbsoluteLayout>
+        <Image
+            x:Name="Logo"
+            TranslationY="-60"
+            WidthRequest="80"
+            HeightRequest="80"
+            AbsoluteLayout.LayoutBounds="0,0,1,.4"
+            AbsoluteLayout.LayoutFlags="All"
+            BackgroundColor="White"
+            Source="logo"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand" />
+        <StackLayout
+
+            AbsoluteLayout.LayoutBounds="1,1,1,.6"
+            AbsoluteLayout.LayoutFlags="All"
+            Spacing="10">
+            <renderers:PancakeView
+                x:Name="EmailPancake"
+                TranslationX="-60"
+                Opacity="0"
+                Margin="0,0,50,0"
+                Padding="20,0,0,0"
+                HeightRequest="80"
+                CornerRadius="0,5,0,5"
+                BackgroundColor="White"
+                VerticalOptions="Center">
+                <renderers:BorderlessEntry
+                    FontSize="14"
+                    Placeholder="Email Address"
+                    PlaceholderColor="Black"
+                    TextColor="Black" />
+            </renderers:PancakeView>
+            <renderers:PancakeView
+                 x:Name="PassPancake"
+                TranslationX="-60"
+                Opacity="0"
+                Margin="0,10,50,0"
+                Padding="20,0,0,0"
+                CornerRadius="0,5,0,5"
+                HeightRequest="80"
+                BackgroundColor="White"
+                VerticalOptions="Center">
+                <renderers:BorderlessEntry
+                    FontSize="14"
+                    IsPassword="True"
+                    Placeholder="Password"
+                    PlaceholderColor="Black"
+                    TextColor="Black" />
+            </renderers:PancakeView>
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Margin="30,30,0,0"
+                    FontSize="14"
+                    Text="Forgot Password?"
+                    TextColor="#0052FF"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="CenterAndExpand" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Back" ></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Button
+                    x:Name="LoginButton"
+                    TranslationX="60"
+                    Opacity="0"
+                    Margin="60,30,0,0"
+                    HeightRequest="80"
+                    WidthRequest="150"
+                    AbsoluteLayout.LayoutBounds="1,1,1,.2"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="#0052FF"
+                    Clicked="Login"
+                    CornerRadius="0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    Text="Login"
+                    TextColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand" />
+            </StackLayout>
+        </StackLayout>
+        <Label
+            Margin="20"
+            AbsoluteLayout.LayoutBounds="1,1,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            FontSize="10"
+            TextColor="White"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="EndAndExpand">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Back" ></TapGestureRecognizer>
+            </Label.GestureRecognizers>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="By signing up, you agree with our " />
+                    <Span
+                        Text="Terms and Conditions"
+                        TextColor="#0052FF"
+                        TextDecorations="Underline" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </AbsoluteLayout>
+</ContentPage>

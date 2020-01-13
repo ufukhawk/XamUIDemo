@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamUIDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:renderers="clr-namespace:XamUIDemo.Renderers"
+    Padding="0"
+    BackgroundColor="#21262F"
+    NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d">
+    <StackLayout
+        Margin="20"
+        Spacing="20"
+        VerticalOptions="CenterAndExpand">
+        <renderers:PancakeView
+            WidthRequest="100"
+            HeightRequest="100"
+            CornerRadius="20"
+            Elevation="5"
+            HorizontalOptions="CenterAndExpand">
+            <Image
+                WidthRequest="100"
+                HeightRequest="100"
+                Source="logo"
+                HorizontalOptions="CenterAndExpand" />
+        </renderers:PancakeView>
+        <Label
+            FontAttributes="Bold"
+            Text="Best Xamarin Forms Apps"
+            TextColor="White"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand" />
+        <renderers:PancakeView
+            HeightRequest="50"
+            BackgroundGradientAngle="270"
+            BackgroundGradientEndColor="#6D67D2"
+            BackgroundGradientStartColor="#4E4A96"
+            CornerRadius="10"
+            Elevation="5"
+            VerticalOptions="Start">
+            <renderers:PancakeView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ClickLoginPage" />
+            </renderers:PancakeView.GestureRecognizers>
+            <Label
+                Text="XamUI Login Page UI Kit"
+                TextColor="White"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" />
+        </renderers:PancakeView>
+        <renderers:PancakeView
+            HeightRequest="50"
+            BackgroundGradientAngle="270"
+            BackgroundGradientEndColor="#E68333"
+            BackgroundGradientStartColor="#A76028"
+            CornerRadius="10"
+            Elevation="5">
+            <renderers:PancakeView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ClickDellyShop" />
+            </renderers:PancakeView.GestureRecognizers>
+            <Label
+                Text="DellyShop eCommerce Application"
+                TextColor="White"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" />
+        </renderers:PancakeView>
+        <renderers:PancakeView
+            HeightRequest="50"
+            BackgroundGradientAngle="270"
+            BackgroundGradientEndColor="#544762"
+            BackgroundGradientStartColor="#494762"
+            CornerRadius="10"
+            Elevation="5">
+            <renderers:PancakeView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ClickXFShop" />
+            </renderers:PancakeView.GestureRecognizers>
+            <Label
+                Text="XFShop eCommerce Application"
+                TextColor="White"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" />
+
+        </renderers:PancakeView>
+        <StackLayout
+            Margin="10,10,10,0"
+            Orientation="Horizontal"
+            HorizontalOptions="FillAndExpand">
+            <Label
+                FontSize="12"
+                WidthRequest="140"
+                HorizontalTextAlignment="Start"
+                TextColor="White"
+                HorizontalOptions="Start"
+                VerticalOptions="EndAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Developed By " />
+                        <Span
+                            FontAttributes="Bold"
+                            FontSize="12"
+                            Text="XamDesign"
+                            TextColor="#E68333"
+                            TextDecorations="Underline" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label
+                WidthRequest="150"
+                FontSize="12" 
+                HorizontalTextAlignment="End"
+                TextColor="White"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="EndAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Designed By " />
+                        <Span
+                            FontAttributes="Bold"
+                            FontSize="12"
+                            Text="Ranish Chirayil "
+                            TextColor="#E68333"
+                            TextDecorations="Underline" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
