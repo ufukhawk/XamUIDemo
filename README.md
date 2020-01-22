@@ -1,6 +1,6 @@
 # XamLoginUIDemo
-<h1><a href="https://codecanyon.net/item/xamui-xamarin-forms-login-page-ui-kit/25462132">Full Code</a></p></h1>
-<a href="https://codecanyon.net/user/xamdesign/portfolio">More Xamarin applications and designs</a></p>
+<h2><a href="https://codecanyon.net/item/xamui-xamarin-forms-login-page-ui-kit/25462132">Full Code</a></p></h2>
+<h2><a href="https://codecanyon.net/user/xamdesign/portfolio">More Xamarin applications and designs</a></p></2>
 <p><img src="https://imgur.com/mNuDLRz.png" border="0" /></p>
 <p><img src="https://imgur.com/Ut6Iql7.png" border="0" /></p>
 <p><a href="https://docs.google.com/document/d/1gZ7fwnI3K_rBB-xc0LTwKVd8rpUR-1RGkakBPIrMHTk/edit?usp=sharing" target="_blank" rel="noopener"> <img src="https://imgur.com/1cUGpjX.png" border="0" /> </a></p>
