@@ -35,7 +35,7 @@ You can use these designs seamlessly in your applications, the design is made mo
 <p style="font-size: 15px;"><strong>Gradient View</strong></p>
 </li>
 </ul>
-
+ 
 <h2>Want to use this Application for your business or reuse?</h2>
 <p>We think that is fantastic! Already we have several clients that are using a similar template and love the results. If you are looking to use this application for production proposes you will need to purchase an extended license. For development and testing proposes you are able to use a regular license.</p>
 <h2>What is Xamarin?</h2>
